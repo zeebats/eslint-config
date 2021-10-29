@@ -1,0 +1,41 @@
+{
+  "name": "@zeebats/eslint-config",
+  "version": "1.0.0",
+  "description": "ESLint sharable config for Zeebats projects",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "repository": "https://github.com/zeebats/eslint",
+  "license": "MIT",
+  "author": "Zeebats",
+  "main": "index.js",
+  "files": [
+    "rules",
+    "index.js",
+    "README.md",
+    "typescript.js",
+    "vue.js"
+  ],
+  "scripts": {
+    "eslint": "eslint '**/*.js'",
+    "eslint:fix": "npm run eslint -- --fix",
+    "update:interactive": "npx npm-check -uE"
+  },
+  "devDependencies": {
+    "@babel/core": "7.14.6",
+    "@babel/eslint-parser": "7.14.7",
+    "eslint": "7.30.0",
+    "eslint-plugin-jsdoc": "35.4.1",
+    "eslint-plugin-unicorn": "34.0.1",
+    "lint-staged": "11.0.0",
+    "simple-git-hooks": "2.5.1"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/eslint-parser": "^7.0.0",
+    "eslint": "^7.0.0",
+    "eslint-plugin-jsdoc": ">=35.0.0",
+    "eslint-plugin-unicorn": ">=34.0.0"
+  }
+}
