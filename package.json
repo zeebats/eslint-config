@@ -20,6 +20,7 @@
   "scripts": {
     "eslint": "eslint '**/*.js'",
     "eslint:fix": "npm run eslint -- --fix",
+    "test": "tape tests/*.js",
     "update:interactive": "npx npm-check -uE"
   },
   "devDependencies": {
@@ -29,7 +30,8 @@
     "eslint-plugin-jsdoc": "37.1.0",
     "eslint-plugin-unicorn": "39.0.0",
     "lint-staged": "12.1.2",
-    "simple-git-hooks": "2.7.0"
+    "simple-git-hooks": "2.7.0",
+    "tape": "5.3.2"
   },
   "peerDependencies": {
     "@babel/core": "^7.0.0",
