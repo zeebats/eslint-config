@@ -1,23 +1,21 @@
 # @zeebats/eslint-config
 
 <p align="center">
-    <img src="https://img.shields.io/badge/release-1.0.x-orange?style=for-the-badge" alt="Release">
-    <img src="https://img.shields.io/badge/eslint-%5E8.x-8080F2?style=for-the-badge" alt="ESLint">
-    <a href="https://www.npmjs.com/package/@zeebats/eslint-config"><img src="https://img.shields.io/npm/v/@zeebats/eslint-config.svg?style=for-the-badge" alt="NPM version"></a>
+    <img src="https://img.shields.io/badge/eslint-%5E8-brightgreen" alt="ESLint">
+    <a href="https://www.npmjs.com/package/@zeebats/eslint-config"><img src="https://img.shields.io/npm/v/@zeebats/eslint-config.svg" alt="NPM version"></a>
 </p>
 
 This is a shareable config for [ESLint](https://eslint.org). All the rules and configurations are already set. Rules can be overridden if needed.
 
-- [@zeebats/eslint-config](#zeebatseslint-config)
-  - [:package: Installing](#package-installing)
+- [Installing](#package-installing)
     - [Vue.js projects](#vuejs-projects)
     - [TypeScript projects](#typescript-projects)
     - [Vue.js, TypeScript and regular JavaScript together](#vuejs-typescript-and-regular-javascript-together)
-  - [:rocket: CLI usage](#rocket-cli-usage)
-  - [:pencil2: Editor / IDE integration](#pencil2-editor--ide-integration)
+- [CLI usage](#rocket-cli-usage)
+- [Editor / IDE integration](#pencil2-editor--ide-integration)
     - [Visual Studio Code](#visual-studio-code)
-      - [Autofix](#autofix)
-      - [Additional Extensions](#additional-extensions)
+        - [Autofix](#autofix)
+        - [Additional Extensions](#additional-extensions)
 
 ## :package: Installing
 
@@ -25,12 +23,6 @@ Include the config into your project:
 
 ```shell
 npm install @zeebats/eslint-config --save-dev --save-exact
-```
-
-Then install the dependencies that the config needs:
-
-```shell
-npx install-peerdeps --dev --extra-args="-E" @zeebats/eslint-config
 ```
 
 In your project, create an `.eslintrc.json` file with the following contents:
@@ -45,13 +37,7 @@ In your project, create an `.eslintrc.json` file with the following contents:
 
 ### Vue.js projects
 
-To use this config with a Vue.js project also install the following packages:
-
-```shell
-npm install eslint-plugin-vue eslint-plugin-vuejs-accessibility --save-dev --save-exact
-```
-
-And set the following extend in `.eslintrc.json`:
+To use this config with a Vue.js project, set the following extend in `.eslintrc.json`:
 
 ```json
 {
@@ -63,13 +49,7 @@ And set the following extend in `.eslintrc.json`:
 
 ### TypeScript projects
 
-To use this config with a TypeScript project also install the following packages
-
-```shell
-npm install @typescript-eslint/parser @typescript-eslint/eslint-plugin --save-dev --save-exact
-```
-
-And set the following extend in `.eslintrc.json`:
+To use this config with a TypeScript project, set the following extend in `.eslintrc.json`:
 
 ```json
 {
@@ -81,13 +61,7 @@ And set the following extend in `.eslintrc.json`:
 
 ### Vue.js, TypeScript and regular JavaScript together
 
-To use this config with a Vue.js, TypeScript and regular JavaScript project also install the following packages
-
-```shell
-npm install eslint-plugin-vue eslint-plugin-vuejs-accessibility @typescript-eslint/parser @typescript-eslint/eslint-plugin --save-dev --save-exact
-```
-
-And set the following extend in `.eslintrc.json`:
+To use this config with a Vue.js, TypeScript and regular JavaScript project, set the following extend in `.eslintrc.json`:
 
 ```json
 {
