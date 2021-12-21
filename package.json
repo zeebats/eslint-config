@@ -1,10 +1,12 @@
 {
   "name": "@zeebats/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint sharable config for Zeebats projects",
   "keywords": [
     "eslint",
-    "eslintconfig"
+    "eslint-config",
+    "typescript",
+    "vue"
   ],
   "repository": "https://github.com/zeebats/eslint-config",
   "license": "MIT",
@@ -13,7 +15,6 @@
   "files": [
     "rules",
     "index.js",
-    "README.md",
     "typescript.js",
     "vue.js"
   ],
