@@ -2,7 +2,6 @@
 
 module.exports = {
     rules: {
-        'vuejs-accessibility/media-has-caption': 'off',
         'vue/block-tag-newline': [
             'error',
             {
@@ -23,5 +22,15 @@ module.exports = {
         'vue/padding-line-between-blocks': ['error', 'always'],
         'vue/singleline-html-element-content-newline': 'off',
         'vue/v-on-function-call': 'error',
+        'vuejs-accessibility/label-has-for': [
+            'error',
+            {
+                allowChildren: true,
+                required: {
+                    some: ['nesting', 'id'],
+                },
+            },
+        ],
+        'vuejs-accessibility/media-has-caption': 'off',
     },
 };
