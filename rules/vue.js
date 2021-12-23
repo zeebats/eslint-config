@@ -17,6 +17,7 @@ module.exports = {
             },
         ],
         'vue/html-indent': ['error', 4],
+        'vue/multi-word-component-names': 'off',
         'vue/no-empty-component-block': 'error',
         'vue/no-template-target-blank': 'error',
         'vue/padding-line-between-blocks': ['error', 'always'],
