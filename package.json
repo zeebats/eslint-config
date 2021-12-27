@@ -27,7 +27,7 @@
   "devDependencies": {
     "lint-staged": "12.1.4",
     "simple-git-hooks": "2.7.0",
-    "tape": "5.3.2"
+    "tape": "5.4.0"
   },
   "peerDependencies": {
     "@babel/core": "^7.0.0",
