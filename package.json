@@ -25,7 +25,7 @@
     "update:interactive": "npx npm-check -uE"
   },
   "devDependencies": {
-    "lint-staged": "12.2.1",
+    "lint-staged": "12.2.2",
     "simple-git-hooks": "2.7.0",
     "tape": "5.4.1"
   },
