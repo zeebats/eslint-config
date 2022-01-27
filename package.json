@@ -25,7 +25,6 @@
     "update:interactive": "npx npm-check -uE"
   },
   "devDependencies": {
-    "lint-staged": "12.3.2",
     "simple-git-hooks": "2.7.0",
     "tape": "5.5.0"
   },
@@ -38,6 +37,7 @@
     "eslint-plugin-jsdoc": "^37.0.0",
     "eslint-plugin-unicorn": "^39.0.0",
     "eslint-plugin-vue": "^8.0.0",
-    "eslint-plugin-vuejs-accessibility": "^1.0.0"
+    "eslint-plugin-vuejs-accessibility": "^1.0.0",
+    "lint-staged": "^12.0.0"
   }
 }
