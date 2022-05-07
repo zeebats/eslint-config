@@ -18,7 +18,8 @@ module.exports = {
         './rules/variables',
     ],
     ignorePatterns: [
-        '!.stylelintrc.js',
+        '!.*.js',
+        '!.*.mjs',
         '/.nuxt/**',
         '/dist/**',
         '/static/sw.*',
