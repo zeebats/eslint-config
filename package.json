@@ -19,7 +19,7 @@
     "vue.js"
   ],
   "scripts": {
-    "eslint": "eslint '**/*.js'",
+    "eslint": "eslint '{,.}**/{,.}*.{js,mjs}'",
     "eslint:fix": "npm run eslint -- --fix",
     "test": "tape tests/*.js",
     "update:interactive": "npx npm-check -uE"
