@@ -37,6 +37,7 @@ module.exports = {
     },
     plugins: [
         'jsdoc',
+        'sort-destructure-keys',
         'unicorn',
     ],
 };
