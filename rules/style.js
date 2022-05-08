@@ -126,6 +126,13 @@ module.exports = {
         'semi': 'error',
         'semi-style': 'error',
         'sort-destructure-keys/sort-destructure-keys': 'error',
+        'sort-keys': [
+            'error',
+            'asc',
+            {
+                natural: true,
+            },
+        ],
         'sort-vars': 'error',
         'space-before-blocks': 'error',
         'space-in-parens': 'error',
