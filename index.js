@@ -18,6 +18,8 @@ module.exports = {
     ignorePatterns: [
         '!.*.js',
         '!.*.mjs',
+        '**/package-lock.json',
+        '**/package.json',
         '/.nuxt/**',
         '/dist/**',
         '/static/sw.*',
@@ -26,6 +28,14 @@ module.exports = {
         {
             files: ['**/*.js'],
             parser: '@babel/eslint-parser',
+        },
+        {
+            extends: [
+                'plugin:jsonc/recommended-with-json',
+                './rules/json',
+            ],
+            files: ['**/*.json'],
+            parser: 'jsonc-eslint-parser',
         },
     ],
     parserOptions: {
