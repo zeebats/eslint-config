@@ -2,10 +2,19 @@
 
 module.exports = {
     rules: {
-        'arrow-body-style': ['error', 'as-needed'],
-        'arrow-parens': ['error', 'as-needed'],
+        'arrow-body-style': [
+            'error',
+            'as-needed',
+        ],
+        'arrow-parens': [
+            'error',
+            'as-needed',
+        ],
         'arrow-spacing': 'error',
-        'generator-star-spacing': ['error', 'after'],
+        'generator-star-spacing': [
+            'error',
+            'after',
+        ],
         'no-confusing-arrow': 'error',
         'no-duplicate-imports': [
             'error',
@@ -40,6 +49,9 @@ module.exports = {
         'rest-spread-spacing': 'error',
         'symbol-description': 'error',
         'template-curly-spacing': 'error',
-        'yield-star-spacing': ['error', 'after'],
+        'yield-star-spacing': [
+            'error',
+            'after',
+        ],
     },
 };

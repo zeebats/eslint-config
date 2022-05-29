@@ -4,9 +4,15 @@ module.exports = {
     rules: {
         'array-callback-return': 'error',
         'block-scoped-var': 'error',
-        'complexity': ['error', 10],
+        'complexity': [
+            'error',
+            10,
+        ],
         'consistent-return': 'error',
-        'curly': ['error', 'all'],
+        'curly': [
+            'error',
+            'all',
+        ],
         'dot-notation': 'error',
         'eqeqeq': 'error',
         'guard-for-in': 'error',
