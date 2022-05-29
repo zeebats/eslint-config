@@ -15,6 +15,7 @@ This is a shareable config for [ESLint](https://eslint.org). All the rules and c
 - [Editor / IDE integration](#pencil2-editor--ide-integration)
     - [Visual Studio Code](#visual-studio-code)
         - [Autofix](#autofix)
+        - [JSON linting](#json-linting)
         - [Additional Extensions](#additional-extensions)
 
 ## :package: Installing
