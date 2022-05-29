@@ -1,6 +1,6 @@
 /* eslint-disable unicorn/prefer-module */
 
-const extendsList = require('./extends-list');
+const rulesExtends = require('./rules');
 
 module.exports = {
     env: {
@@ -21,7 +21,7 @@ module.exports = {
     ],
     overrides: [
         {
-            extends: extendsList,
+            extends: rulesExtends,
             files: [
                 '**/*.js',
                 '**/*.mjs',

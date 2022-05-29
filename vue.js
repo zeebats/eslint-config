@@ -2,7 +2,7 @@
 
 const base = require('.');
 
-const extendsList = require('./extends-list');
+const rulesExtends = require('./rules');
 
 module.exports = {
     ...base,
@@ -10,7 +10,7 @@ module.exports = {
         ...base.overrides,
         {
             extends: [
-                ...extendsList,
+                ...rulesExtends,
                 'plugin:vue/recommended',
                 'plugin:vuejs-accessibility/recommended',
                 './rules/plugins/vue',

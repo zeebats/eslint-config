@@ -5,6 +5,7 @@
   "keywords": [
     "eslint",
     "eslint-config",
+    "json",
     "typescript",
     "vue"
   ],
@@ -13,8 +14,8 @@
   "author": "Zeebats",
   "main": "index.js",
   "files": [
-    "rules",
     "index.js",
+    "rules",
     "typescript.js",
     "vue.js"
   ],
