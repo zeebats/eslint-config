@@ -57,17 +57,6 @@ module.exports = {
         'prefer-promise-reject-errors': 'error',
         'radix': 'error',
         'require-await': 'error',
-        'unicorn/filename-case': [
-            'error',
-            {
-                cases: {
-                    kebabCase: true,
-                    pascalCase: true,
-                },
-            },
-        ],
-        'unicorn/no-array-reduce': 0,
-        'unicorn/no-null': 0,
         'vars-on-top': 'error',
         'yoda': 'error',
     },
