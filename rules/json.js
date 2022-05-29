@@ -18,7 +18,10 @@ module.exports = {
             },
         ],
         'jsonc/comma-style': 'error',
-        'jsonc/indent': ['error', 2],
+        'jsonc/indent': [
+            'error',
+            2,
+        ],
         'jsonc/key-spacing': [
             'error',
             {
@@ -28,13 +31,19 @@ module.exports = {
             },
         ],
         'jsonc/no-octal-escape': 'error',
-        'jsonc/object-curly-newline': ['error', {
-            ObjectExpression: {
-                minProperties: 2,
-                multiline: true,
+        'jsonc/object-curly-newline': [
+            'error',
+            {
+                ObjectExpression: {
+                    minProperties: 2,
+                    multiline: true,
+                },
             },
-        }],
-        'jsonc/object-curly-spacing': ['error', 'always'],
+        ],
+        'jsonc/object-curly-spacing': [
+            'error',
+            'always',
+        ],
         'jsonc/object-property-newline': 'error',
         'jsonc/sort-keys': [
             'error',

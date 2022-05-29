@@ -40,6 +40,7 @@
     "eslint-import-resolver-alias": "^1.0.0",
     "eslint-import-resolver-typescript": "^2.0.0",
     "eslint-plugin-import": "^2.0.0",
+    "eslint-plugin-import-newlines": "^1.0.0",
     "eslint-plugin-jsonc": "^2.0.0",
     "eslint-plugin-sort-destructure-keys": "^1.0.0",
     "eslint-plugin-unicorn": "^42.0.0",

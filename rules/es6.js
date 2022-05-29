@@ -18,9 +18,7 @@ module.exports = {
         'no-confusing-arrow': 'error',
         'no-duplicate-imports': [
             'error',
-            {
-                includeExports: true,
-            },
+            { includeExports: true },
         ],
         'no-useless-computed-key': 'error',
         'no-useless-rename': 'error',

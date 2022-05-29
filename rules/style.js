@@ -39,9 +39,7 @@ module.exports = {
         'indent': [
             'error',
             4,
-            {
-                SwitchCase: 1,
-            },
+            { SwitchCase: 1 },
         ],
         'key-spacing': 'error',
         'keyword-spacing': 'error',
@@ -51,9 +49,7 @@ module.exports = {
         'max-depth': 'error',
         'max-len': [
             'warn',
-            {
-                code: 120,
-            },
+            { code: 120 },
         ],
         'max-lines': 'warn',
         'max-lines-per-function': [
@@ -79,31 +75,23 @@ module.exports = {
         'no-multi-assign': 'error',
         'no-multiple-empty-lines': [
             'error',
-            {
-                max: 1,
-            },
+            { max: 1 },
         ],
         'no-negated-condition': 'error',
         'no-new-object': 'error',
         'no-plusplus': [
             'error',
-            {
-                allowForLoopAfterthoughts: true,
-            },
+            { allowForLoopAfterthoughts: true },
         ],
         'no-tabs': 'error',
         'no-trailing-spaces': 'error',
         'no-underscore-dangle': [
             'error',
-            {
-                enforceInMethodNames: true,
-            },
+            { enforceInMethodNames: true },
         ],
         'no-unneeded-ternary': [
             'error',
-            {
-                defaultAssignment: false,
-            },
+            { defaultAssignment: false },
         ],
         'no-whitespace-before-property': 'error',
         'object-curly-newline': [
@@ -113,16 +101,12 @@ module.exports = {
                     minProperties: 2,
                     multiline: true,
                 },
-                ImportDeclaration: {
-                    minProperties: 4,
-                    multiline: true,
-                },
                 ObjectExpression: {
-                    minProperties: 1,
+                    minProperties: 2,
                     multiline: true,
                 },
                 ObjectPattern: {
-                    minProperties: 4,
+                    minProperties: 2,
                     multiline: true,
                 },
             },
@@ -179,9 +163,7 @@ module.exports = {
         'sort-keys': [
             'error',
             'asc',
-            {
-                natural: true,
-            },
+            { natural: true },
         ],
         'sort-vars': 'error',
         'space-before-blocks': 'error',
