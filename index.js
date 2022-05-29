@@ -8,11 +8,9 @@ module.exports = {
     },
     extends: [
         'eslint:recommended',
-        'plugin:jsdoc/recommended',
         'plugin:unicorn/recommended',
         './rules/errors',
         './rules/es6',
-        './rules/jsdoc',
         './rules/practices',
         './rules/style',
         './rules/variables',
@@ -36,7 +34,6 @@ module.exports = {
         sourceType: 'module',
     },
     plugins: [
-        'jsdoc',
         'sort-destructure-keys',
         'unicorn',
     ],
