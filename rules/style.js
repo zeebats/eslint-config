@@ -2,25 +2,47 @@
 
 module.exports = {
     rules: {
-        'array-bracket-newline': ['error', 'consistent'],
+        'array-bracket-newline': [
+            'error',
+            {
+                minItems: 2,
+                multiline: true,
+            },
+        ],
         'array-bracket-spacing': 'error',
-        'array-element-newline': ['error', 'consistent'],
+        'array-element-newline': [
+            'error',
+            {
+                minItems: 2,
+                multiline: true,
+            },
+        ],
         'block-spacing': 'error',
         'brace-style': 'error',
         'camelcase': 'error',
-        'comma-dangle': ['error', 'always-multiline'],
+        'comma-dangle': [
+            'error',
+            'always-multiline',
+        ],
         'comma-spacing': 'error',
         'comma-style': 'error',
         'computed-property-spacing': 'error',
         'consistent-this': 'error',
         'eol-last': 'error',
         'func-name-matching': 'error',
-        'func-names': ['error', 'never'],
+        'func-names': [
+            'error',
+            'never',
+        ],
         'func-style': 'error',
         'implicit-arrow-linebreak': 'error',
-        'indent': ['error', 4, {
-            SwitchCase: 1,
-        }],
+        'indent': [
+            'error',
+            4,
+            {
+                SwitchCase: 1,
+            },
+        ],
         'key-spacing': 'error',
         'keyword-spacing': 'error',
         'line-comment-position': 'error',
@@ -44,7 +66,10 @@ module.exports = {
         'max-params': 'error',
         'max-statements': 'warn',
         'max-statements-per-line': 'error',
-        'multiline-ternary': ['error', 'never'],
+        'multiline-ternary': [
+            'error',
+            'never',
+        ],
         'new-cap': 'error',
         'new-parens': 'error',
         'newline-per-chained-call': 'error',
@@ -81,30 +106,45 @@ module.exports = {
             },
         ],
         'no-whitespace-before-property': 'error',
-        'object-curly-newline': ['error', {
-            ExportDeclaration: {
-                minProperties: 2,
-                multiline: true,
+        'object-curly-newline': [
+            'error',
+            {
+                ExportDeclaration: {
+                    minProperties: 2,
+                    multiline: true,
+                },
+                ImportDeclaration: {
+                    minProperties: 4,
+                    multiline: true,
+                },
+                ObjectExpression: {
+                    minProperties: 1,
+                    multiline: true,
+                },
+                ObjectPattern: {
+                    minProperties: 4,
+                    multiline: true,
+                },
             },
-            ImportDeclaration: {
-                minProperties: 4,
-                multiline: true,
-            },
-            ObjectExpression: {
-                minProperties: 1,
-                multiline: true,
-            },
-            ObjectPattern: {
-                minProperties: 4,
-                multiline: true,
-            },
-        }],
-        'object-curly-spacing': ['error', 'always'],
+        ],
+        'object-curly-spacing': [
+            'error',
+            'always',
+        ],
         'object-property-newline': 'error',
-        'one-var': ['error', 'never'],
-        'one-var-declaration-per-line': ['error', 'always'],
+        'one-var': [
+            'error',
+            'never',
+        ],
+        'one-var-declaration-per-line': [
+            'error',
+            'always',
+        ],
         'operator-assignment': 'error',
-        'operator-linebreak': ['error', 'after'],
+        'operator-linebreak': [
+            'error',
+            'after',
+        ],
         'padding-line-between-statements': [
             'error',
             {
@@ -114,7 +154,10 @@ module.exports = {
             },
         ],
         'prefer-object-spread': 'error',
-        'quote-props': ['error', 'consistent-as-needed'],
+        'quote-props': [
+            'error',
+            'consistent-as-needed',
+        ],
         'quotes': [
             'error',
             'single',
@@ -127,7 +170,8 @@ module.exports = {
         'semi-style': 'error',
         'sort-destructure-keys/sort-destructure-keys': 'error',
         'sort-imports': [
-            'error', {
+            'error',
+            {
                 ignoreCase: true,
                 ignoreDeclarationSort: true,
             },

@@ -16,11 +16,17 @@ module.exports = {
                 registeredComponentsOnly: false,
             },
         ],
-        'vue/html-indent': ['error', 4],
+        'vue/html-indent': [
+            'error',
+            4,
+        ],
         'vue/multi-word-component-names': 'off',
         'vue/no-empty-component-block': 'error',
         'vue/no-template-target-blank': 'error',
-        'vue/padding-line-between-blocks': ['error', 'always'],
+        'vue/padding-line-between-blocks': [
+            'error',
+            'always',
+        ],
         'vue/singleline-html-element-content-newline': 'off',
         'vue/v-on-function-call': 'error',
         'vuejs-accessibility/label-has-for': [
@@ -28,7 +34,10 @@ module.exports = {
             {
                 allowChildren: true,
                 required: {
-                    some: ['nesting', 'id'],
+                    some: [
+                        'nesting',
+                        'id',
+                    ],
                 },
             },
         ],
