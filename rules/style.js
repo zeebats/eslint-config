@@ -152,7 +152,6 @@ module.exports = {
         ],
         'semi': 'error',
         'semi-style': 'error',
-        'sort-destructure-keys/sort-destructure-keys': 'error',
         'sort-imports': [
             'error',
             {

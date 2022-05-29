@@ -10,7 +10,7 @@ module.exports = {
             extends: [
                 'plugin:vue/recommended',
                 'plugin:vuejs-accessibility/recommended',
-                './rules/vue',
+                './rules/plugins/vue',
             ],
             files: ['**/*.vue'],
             parser: 'vue-eslint-parser',
