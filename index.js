@@ -46,6 +46,7 @@ module.exports = {
         sourceType: 'module',
     },
     plugins: [
+        'import-newlines',
         'sort-destructure-keys',
         'unicorn',
     ],
@@ -59,8 +60,14 @@ module.exports = {
                     '.tsx',
                 ],
                 map: [
-                    ['@', '.'],
-                    ['~', '.'],
+                    [
+                        '@',
+                        '.',
+                    ],
+                    [
+                        '~',
+                        '.',
+                    ],
                 ],
             },
         },

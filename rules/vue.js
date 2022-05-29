@@ -12,9 +12,7 @@ module.exports = {
         'vue/component-name-in-template-casing': [
             'error',
             'PascalCase',
-            {
-                registeredComponentsOnly: false,
-            },
+            { registeredComponentsOnly: false },
         ],
         'vue/html-indent': [
             'error',

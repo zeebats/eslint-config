@@ -18,9 +18,7 @@ module.exports = {
     settings: {
         'import/resolver': {
             ...base.settings['import/resolver'],
-            typescript: {
-                alwaysTryTypes: true,
-            },
+            typescript: { alwaysTryTypes: true },
         },
     },
 };
