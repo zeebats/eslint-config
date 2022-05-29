@@ -129,6 +129,16 @@ If you want Visual Studio Code to autofix your code on save, add this snippet to
 }
 ```
 
+#### JSON linting
+
+If you want Visual Studio Code to lint JSON files with ESLint, add this snippet to your `settings.json` file:
+
+```json
+{
+    "eslint.validate": ["json", "jsonc", "json5"],
+}
+```
+
 #### Additional Extensions
 - [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens) to get inline error messages
 

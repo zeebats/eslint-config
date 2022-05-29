@@ -1,26 +1,19 @@
 /* eslint-disable unicorn/prefer-module */
 
+const extendsList = require('./extends-list');
+
 module.exports = {
     env: {
         browser: true,
         es2021: true,
         node: true,
     },
-    extends: [
-        'eslint:recommended',
-        'plugin:import/recommended',
-        'plugin:unicorn/recommended',
-        './rules/errors',
-        './rules/es6',
-        './rules/plugins',
-        './rules/practices',
-        './rules/style',
-        './rules/variables',
-    ],
     ignorePatterns: [
         '!.*.js',
         '!.*.mjs',
+        '!.*.json',
         '**/package-lock.json',
+        '**/.package-lock.json',
         '**/package.json',
         '/.nuxt/**',
         '/dist/**',
@@ -28,7 +21,11 @@ module.exports = {
     ],
     overrides: [
         {
-            files: ['**/*.js'],
+            extends: extendsList,
+            files: [
+                '**/*.js',
+                '**/*.mjs',
+            ],
             parser: '@babel/eslint-parser',
         },
         {
