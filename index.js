@@ -34,7 +34,7 @@ module.exports = {
         {
             extends: [
                 'plugin:jsonc/recommended-with-json',
-                './rules/json',
+                './rules/plugins/jsonc',
             ],
             files: ['**/*.json'],
             parser: 'jsonc-eslint-parser',
