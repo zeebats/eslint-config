@@ -20,6 +20,10 @@ module.exports = {
             ],
             parser: '@typescript-eslint/parser',
         },
+        {
+            files: ['**/*.vue'],
+            rules: { 'no-undef': 'off' },
+        },
     ],
     settings: {
         'import/resolver': {
