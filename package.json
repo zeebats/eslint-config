@@ -17,7 +17,8 @@
     "index.js",
     "rules",
     "typescript.js",
-    "vue.js"
+    "vue.js",
+    "vue3.js"
   ],
   "scripts": {
     "eslint": "eslint '{,.}**/{,.}*.{js,json,mjs}'",
