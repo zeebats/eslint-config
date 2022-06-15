@@ -10,7 +10,7 @@ This is a shareable config for [ESLint](https://eslint.org). All the rules and c
 - [Installing](#package-installing)
     - [Vue.js projects](#vuejs-projects)
     - [TypeScript projects](#typescript-projects)
-    - [Vue.js, TypeScript and regular JavaScript together](#vuejs-typescript-and-regular-javascript-together)
+    - [Vue.js and TypeScript together](#vuejs-and-typescript-together)
 - [CLI usage](#rocket-cli-usage)
 - [Editor / IDE integration](#pencil2-editor--ide-integration)
     - [Visual Studio Code](#visual-studio-code)
