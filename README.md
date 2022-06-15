@@ -60,18 +60,21 @@ To use this config with a TypeScript project, set the following extend in `.esli
 
 ---
 
-### Vue.js, TypeScript and regular JavaScript together
+### Vue.js and TypeScript together
 
-To use this config with a Vue.js, TypeScript and regular JavaScript project, set the following extend in `.eslintrc.json`:
+To use this config with a Vue.js and TypeScript, set the following extend in `.eslintrc.json`:
 
 ```json
 {
   "extends": [
     "@zeebats/eslint-config/vue",
+    // "@zeebats/eslint-config/vue3",
     "@zeebats/eslint-config/typescript"
   ]
 }
 ```
+
+> :warning: The order is important here, the TypeScript config needs to be last
 
 ## :rocket: CLI usage
 
