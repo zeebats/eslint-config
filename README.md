@@ -68,13 +68,26 @@ To use this config with a Vue.js and TypeScript, set the following extend in `.e
 {
   "extends": [
     "@zeebats/eslint-config/vue",
-    // "@zeebats/eslint-config/vue3",
     "@zeebats/eslint-config/typescript"
   ]
 }
 ```
 
 > :warning: The order is important here, the TypeScript config needs to be last
+
+### Vue 3
+
+Lastly, Vue 3 is the new stable version of Vue since some time. This config supports Vue 3 linting by modifying the `"extends"` like so:
+
+```diff
+{
+  "extends": [
+-   "@zeebats/eslint-config/vue",
++   "@zeebats/eslint-config/vue3",
+    "@zeebats/eslint-config/typescript"
+  ]
+}
+```
 
 ## :rocket: CLI usage
 
