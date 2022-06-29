@@ -6,10 +6,10 @@ const sortDestructureKeysPlugin = require('./plugins/sort-destructure-keys');
 const unicornPlugin = require('./plugins/unicorn');
 
 module.exports = {
-    rules: {
-        ...importNewlinesPlugin,
-        ...importPlugin,
-        ...sortDestructureKeysPlugin,
-        ...unicornPlugin,
-    },
+	rules: {
+		...importNewlinesPlugin,
+		...importPlugin,
+		...sortDestructureKeysPlugin,
+		...unicornPlugin,
+	},
 };
