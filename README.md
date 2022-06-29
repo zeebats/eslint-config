@@ -1,22 +1,22 @@
 # @zeebats/eslint-config
 
 <p align="center">
-    <img src="https://img.shields.io/badge/eslint-%5E8-brightgreen" alt="ESLint">
-    <a href="https://www.npmjs.com/package/@zeebats/eslint-config"><img src="https://img.shields.io/npm/v/@zeebats/eslint-config.svg" alt="NPM version"></a>
+	<img src="https://img.shields.io/badge/eslint-%5E8-brightgreen" alt="ESLint">
+	<a href="https://www.npmjs.com/package/@zeebats/eslint-config"><img src="https://img.shields.io/npm/v/@zeebats/eslint-config.svg" alt="NPM version"></a>
 </p>
 
 This is a shareable config for [ESLint](https://eslint.org). All the rules and configurations are already set. Rules can be overridden if needed.
 
 - [Installing](#package-installing)
-    - [Vue.js projects](#vuejs-projects)
-    - [TypeScript projects](#typescript-projects)
-    - [Vue.js and TypeScript together](#vuejs-and-typescript-together)
+	- [Vue.js projects](#vuejs-projects)
+	- [TypeScript projects](#typescript-projects)
+	- [Vue.js and TypeScript together](#vuejs-and-typescript-together)
 - [CLI usage](#rocket-cli-usage)
 - [Editor / IDE integration](#pencil2-editor--ide-integration)
-    - [Visual Studio Code](#visual-studio-code)
-        - [Autofix](#autofix)
-        - [JSON linting](#json-linting)
-        - [Additional Extensions](#additional-extensions)
+	- [Visual Studio Code](#visual-studio-code)
+		- [Autofix](#autofix)
+		- [JSON linting](#json-linting)
+		- [Additional Extensions](#additional-extensions)
 
 ## :package: Installing
 
@@ -30,7 +30,7 @@ In your project, create an `.eslintrc.json` file with the following contents:
 
 ```json
 {
-  "extends": ["@zeebats"]
+	"extends": ["@zeebats"]
 }
 ```
 
@@ -42,7 +42,7 @@ To use this config with a Vue.js project, set the following extend in `.eslintrc
 
 ```json
 {
-  "extends": ["@zeebats/eslint-config/vue"]
+	"extends": ["@zeebats/eslint-config/vue"]
 }
 ```
 
@@ -54,7 +54,7 @@ To use this config with a TypeScript project, set the following extend in `.esli
 
 ```json
 {
-  "extends": ["@zeebats/eslint-config/typescript"]
+	"extends": ["@zeebats/eslint-config/typescript"]
 }
 ```
 
@@ -66,10 +66,10 @@ To use this config with a Vue.js and TypeScript, set the following extend in `.e
 
 ```json
 {
-  "extends": [
-    "@zeebats/eslint-config/vue",
-    "@zeebats/eslint-config/typescript"
-  ]
+	"extends": [
+		"@zeebats/eslint-config/vue",
+		"@zeebats/eslint-config/typescript"
+	]
 }
 ```
 
@@ -81,11 +81,11 @@ Lastly, Vue 3 is the new stable version of Vue since some time. This config supp
 
 ```diff
 {
-  "extends": [
--   "@zeebats/eslint-config/vue",
-+   "@zeebats/eslint-config/vue3",
-    "@zeebats/eslint-config/typescript"
-  ]
+	"extends": [
+-		"@zeebats/eslint-config/vue",
++		"@zeebats/eslint-config/vue3",
+		"@zeebats/eslint-config/typescript"
+	]
 }
 ```
 
@@ -95,8 +95,8 @@ To use ESLint in the command-line, add the following scripts to your projects `p
 
 ```json
 "scripts": {
-  "eslint": "eslint 'path/to/your/assets/**/*.js'",
-  "eslint:fix": "npm run eslint -- --fix"
+	"eslint": "eslint 'path/to/your/assets/**/*.js'",
+	"eslint:fix": "npm run eslint -- --fix"
 }
 ```
 
@@ -104,8 +104,8 @@ To also check Vue.js files:
 
 ```json
 "scripts": {
-  "eslint": "eslint 'path/to/your/assets/**/*.{js,vue}'",
-  "eslint:fix": "npm run eslint -- --fix"
+	"eslint": "eslint 'path/to/your/assets/**/*.{js,vue}'",
+	"eslint:fix": "npm run eslint -- --fix"
 }
 ```
 
@@ -113,8 +113,8 @@ Or TypeScript files:
 
 ```json
 "scripts": {
-  "eslint": "eslint 'path/to/your/assets/**/*.{js,ts,tsx}'",
-  "eslint:fix": "npm run eslint -- --fix"
+	"eslint": "eslint 'path/to/your/assets/**/*.{js,ts,tsx}'",
+	"eslint:fix": "npm run eslint -- --fix"
 }
 ```
 
@@ -140,9 +140,9 @@ If you want Visual Studio Code to autofix your code on save, add this snippet to
 
 ```json
 {
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  }
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	}
 }
 ```
 
@@ -152,7 +152,7 @@ If you want Visual Studio Code to lint JSON files with ESLint, add this snippet 
 
 ```json
 {
-    "eslint.validate": ["json", "jsonc", "json5"],
+	"eslint.validate": ["json", "jsonc", "json5"],
 }
 ```
 
