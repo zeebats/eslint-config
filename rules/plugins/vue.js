@@ -16,7 +16,7 @@ module.exports = {
 		],
 		'vue/html-indent': [
 			'error',
-			4,
+			'tab',
 		],
 		'vue/multi-word-component-names': 'off',
 		'vue/no-empty-component-block': 'error',
