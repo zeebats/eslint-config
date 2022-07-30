@@ -8,6 +8,7 @@
 	],
 	"packageRules": [
 		{
+			"automerge": true,
 			"matchDepTypes": ["peerDependencies"],
 			"rangeStrategy": "replace"
 		}
