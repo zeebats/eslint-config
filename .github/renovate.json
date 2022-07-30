@@ -6,5 +6,11 @@
 		":disableDependencyDashboard",
 		"schedule:weekends"
 	],
+	"packageRules": [
+		{
+			"matchDepTypes": ["peerDependencies"],
+			"rangeStrategy": "replace"
+		}
+	],
 	"timezone": "Europe/Amsterdam"
 }
