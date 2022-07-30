@@ -9,6 +9,7 @@
 	"packageRules": [
 		{
 			"automerge": true,
+			"automergeType": "branch",
 			"matchDepTypes": ["peerDependencies"],
 			"rangeStrategy": "replace"
 		}
