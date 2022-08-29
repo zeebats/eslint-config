@@ -27,8 +27,8 @@
 		"update:interactive": "npx npm-check -uE"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "17.0.3",
-		"@commitlint/config-conventional": "17.0.3",
+		"@commitlint/cli": "17.1.2",
+		"@commitlint/config-conventional": "17.1.0",
 		"lint-staged": "13.0.3",
 		"simple-git-hooks": "2.8.0",
 		"tape": "5.6.0"
