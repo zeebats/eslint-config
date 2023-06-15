@@ -13,12 +13,14 @@ module.exports = {
 				...rulesExtends,
 				'plugin:@typescript-eslint/recommended',
 				'plugin:import/typescript',
+				'./rules/plugins/typescript',
 			],
 			files: [
 				'**/*.ts',
 				'**/*.tsx',
 			],
 			parser: '@typescript-eslint/parser',
+			parserOptions: { project: './tsconfig.json' },
 		},
 		{
 			files: ['**/*.vue'],
