@@ -47,6 +47,6 @@
 		"eslint-plugin-sort-destructure-keys": "^1.0.0",
 		"eslint-plugin-unicorn": "^47.0.0",
 		"eslint-plugin-vue": "^9.0.0",
-		"eslint-plugin-vuejs-accessibility": "^1.0.0"
+		"eslint-plugin-vuejs-accessibility": "^2.0.0"
 	}
 }
