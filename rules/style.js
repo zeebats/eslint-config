@@ -155,18 +155,8 @@ module.exports = {
 		],
 		'semi': 'error',
 		'semi-style': 'error',
-		'sort-imports': [
-			'error',
-			{
-				ignoreCase: true,
-				ignoreDeclarationSort: true,
-			},
-		],
-		'sort-keys': [
-			'error',
-			'asc',
-			{ natural: true },
-		],
+		'sort-imports': 'off',
+		'sort-keys': 'off',
 		'sort-vars': 'error',
 		'space-before-blocks': 'error',
 		'space-in-parens': 'error',
