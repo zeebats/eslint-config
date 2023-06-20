@@ -1,4 +1,4 @@
-/* eslint-disable unicorn/prefer-module, sort-keys */
+/* eslint-disable unicorn/prefer-module */
 
 module.exports = {
 	rules: {
@@ -15,13 +15,22 @@ module.exports = {
 		'astro/prefer-split-class-list': 'error',
 		'astro/valid-compile': 'error',
 
-		'semi': 'off',
+		/* Semi */
 		'astro/semi': 'error',
+		'semi': 'off',
 
+		/* JSX-a11y */
+		'astro/jsx-a11y/alt-text': 'error',
 		'astro/jsx-a11y/anchor-ambiguous-text': [
 			'error',
 			{ words: ['click here'] },
 		],
+		'astro/jsx-a11y/anchor-is-valid': 'error',
+		'astro/jsx-a11y/aria-activedescendant-has-tabindex': 'error',
+		'astro/jsx-a11y/aria-props': 'error',
+		'astro/jsx-a11y/aria-proptypes': 'error',
+		'astro/jsx-a11y/aria-role': 'error',
+		'astro/jsx-a11y/aria-unsupported-elements': 'error',
 		'astro/jsx-a11y/autocomplete-valid': 'error',
 		'astro/jsx-a11y/click-events-have-key-events': 'error',
 		'astro/jsx-a11y/control-has-associated-label': [
@@ -84,26 +93,16 @@ module.exports = {
 		'astro/jsx-a11y/no-interactive-element-to-noninteractive-role': [
 			'error',
 			{
+				canvas: ['img'],
 				tr: [
 					'none',
 					'presentation',
 				],
-				canvas: ['img'],
 			},
 		],
 		'astro/jsx-a11y/no-noninteractive-element-interactions': [
 			'error',
 			{
-				handlers: [
-					'onClick',
-					'onError',
-					'onLoad',
-					'onMouseDown',
-					'onMouseUp',
-					'onKeyPress',
-					'onKeyDown',
-					'onKeyUp',
-				],
 				alert: [
 					'onKeyUp',
 					'onKeyDown',
@@ -118,6 +117,16 @@ module.exports = {
 					'onKeyDown',
 					'onKeyPress',
 				],
+				handlers: [
+					'onClick',
+					'onError',
+					'onLoad',
+					'onMouseDown',
+					'onMouseUp',
+					'onKeyPress',
+					'onKeyDown',
+					'onKeyUp',
+				],
 				iframe: [
 					'onError',
 					'onLoad',
@@ -131,14 +140,16 @@ module.exports = {
 		'astro/jsx-a11y/no-noninteractive-element-to-interactive-role': [
 			'error',
 			{
-				ul: [
-					'listbox',
-					'menu',
-					'menubar',
+				fieldset: [
 					'radiogroup',
-					'tablist',
-					'tree',
-					'treegrid',
+					'presentation',
+				],
+				li: [
+					'menuitem',
+					'option',
+					'row',
+					'tab',
+					'treeitem',
 				],
 				ol: [
 					'listbox',
@@ -149,27 +160,25 @@ module.exports = {
 					'tree',
 					'treegrid',
 				],
-				li: [
-					'menuitem',
-					'option',
-					'row',
-					'tab',
-					'treeitem',
-				],
 				table: ['grid'],
 				td: ['gridcell'],
-				fieldset: [
+				ul: [
+					'listbox',
+					'menu',
+					'menubar',
 					'radiogroup',
-					'presentation',
+					'tablist',
+					'tree',
+					'treegrid',
 				],
 			},
 		],
 		'astro/jsx-a11y/no-noninteractive-tabindex': [
 			'error',
 			{
-				tags: [],
-				roles: ['tabpanel'],
 				allowExpressionValues: true,
+				roles: ['tabpanel'],
+				tags: [],
 			},
 		],
 		'astro/jsx-a11y/no-redundant-roles': 'error',
@@ -191,12 +200,5 @@ module.exports = {
 		'astro/jsx-a11y/role-supports-aria-props': 'error',
 		'astro/jsx-a11y/scope': 'error',
 		'astro/jsx-a11y/tabindex-no-positive': 'error',
-		'astro/jsx-a11y/alt-text': 'error',
-		'astro/jsx-a11y/anchor-is-valid': 'error',
-		'astro/jsx-a11y/aria-activedescendant-has-tabindex': 'error',
-		'astro/jsx-a11y/aria-props': 'error',
-		'astro/jsx-a11y/aria-proptypes': 'error',
-		'astro/jsx-a11y/aria-role': 'error',
-		'astro/jsx-a11y/aria-unsupported-elements': 'error',
 	},
 };

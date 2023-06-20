@@ -10,4 +10,5 @@ module.exports = [
 	'./rules/practices',
 	'./rules/style',
 	'./rules/variables',
+	'./rules/plugins/perfectionist',
 ];

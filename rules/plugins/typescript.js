@@ -3,6 +3,7 @@
 module.exports = {
 	rules: {
 		// Typescript Rules
+		'@typescript-eslint/adjacent-overload-signatures': 'off',
 		'@typescript-eslint/array-type': 'error',
 		'@typescript-eslint/await-thenable': 'error',
 		'@typescript-eslint/ban-tslint-comment': 'error',
@@ -35,30 +36,30 @@ module.exports = {
 		'@typescript-eslint/naming-convention': [
 			'error',
 			{
-				selector: 'default',
 				format: ['camelCase'],
+				selector: 'default',
 			},
 			{
-				selector: 'variable',
 				format: [
 					'camelCase',
 					'UPPER_CASE',
 				],
+				selector: 'variable',
 			},
 			{
-				selector: 'parameter',
 				format: ['camelCase'],
 				leadingUnderscore: 'allow',
+				selector: 'parameter',
 			},
 			{
-				selector: 'memberLike',
-				modifiers: ['private'],
 				format: ['camelCase'],
 				leadingUnderscore: 'require',
+				modifiers: ['private'],
+				selector: 'memberLike',
 			},
 			{
-				selector: 'typeLike',
 				format: ['PascalCase'],
+				selector: 'typeLike',
 			},
 		],
 		'@typescript-eslint/no-base-to-string': 'error',
@@ -85,8 +86,8 @@ module.exports = {
 		'@typescript-eslint/no-unnecessary-boolean-literal-compare': [
 			'error',
 			{
-				allowComparingNullableBooleansToTrue: false,
 				allowComparingNullableBooleansToFalse: false,
+				allowComparingNullableBooleansToTrue: false,
 			},
 		],
 		'@typescript-eslint/no-unnecessary-condition': 'error',
@@ -137,7 +138,7 @@ module.exports = {
 			},
 		],
 		'@typescript-eslint/restrict-template-expressions': 'error',
-		'@typescript-eslint/sort-type-constituents': 'error',
+		'@typescript-eslint/sort-type-constituents': 'off',
 		'@typescript-eslint/strict-boolean-expressions': [
 			'error',
 			{
@@ -152,20 +153,13 @@ module.exports = {
 		'@typescript-eslint/unified-signatures': 'error',
 
 		// Extension Rules
-		'default-param-last': 'off',
 		'@typescript-eslint/default-param-last': 'error',
-		'dot-notation': 'off',
 		'@typescript-eslint/dot-notation': 'error',
-		'init-declarations': 'off',
 		'@typescript-eslint/init-declarations': 'error',
-		'no-implied-eval': 'off',
 		'@typescript-eslint/no-dupe-class-members': 'error',
 		'@typescript-eslint/no-implied-eval': 'error',
-		'no-invalid-this': 'off',
 		'@typescript-eslint/no-invalid-this': 'error',
-		'no-loop-func': 'off',
 		'@typescript-eslint/no-loop-func': 'error',
-		'no-magic-numbers': 'off',
 		'@typescript-eslint/no-magic-numbers': [
 			'error',
 			{
@@ -177,30 +171,37 @@ module.exports = {
 			'error',
 			{ ignoreDeclarationMerge: false },
 		],
-		'no-restricted-imports': 'off',
 		'@typescript-eslint/no-restricted-imports': 'error',
-		'no-shadow': 'off',
 		'@typescript-eslint/no-shadow': [
 			'error',
 			{
-				ignoreTypeValueShadow: false,
 				ignoreFunctionTypeParameterNameValueShadow: false,
+				ignoreTypeValueShadow: false,
 			},
 		],
-		'no-throw-literal': 'off',
 		'@typescript-eslint/no-throw-literal': 'error',
-		'no-unused-expressions': 'off',
 		'@typescript-eslint/no-unused-expressions': 'error',
 		'@typescript-eslint/no-unused-vars': 'error',
-		'no-use-before-define': 'off',
 		'@typescript-eslint/no-use-before-define': [
 			'error',
 			{ ignoreTypeReferences: false },
 		],
-		'no-useless-constructor': 'off',
 		'@typescript-eslint/no-useless-constructor': 'error',
 		'@typescript-eslint/require-await': 'error',
-		'no-return-await': 'off',
 		'@typescript-eslint/return-await': 'error',
+		'default-param-last': 'off',
+		'dot-notation': 'off',
+		'init-declarations': 'off',
+		'no-implied-eval': 'off',
+		'no-invalid-this': 'off',
+		'no-loop-func': 'off',
+		'no-magic-numbers': 'off',
+		'no-restricted-imports': 'off',
+		'no-return-await': 'off',
+		'no-shadow': 'off',
+		'no-throw-literal': 'off',
+		'no-unused-expressions': 'off',
+		'no-use-before-define': 'off',
+		'no-useless-constructor': 'off',
 	},
 };
