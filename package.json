@@ -1,6 +1,6 @@
 {
 	"name": "@zeebats/eslint-config",
-	"version": "1.4.0-beta.5",
+	"version": "1.4.0-beta.6",
 	"description": "ESLint sharable config for Zeebats projects",
 	"keywords": [
 		"eslint",
@@ -24,7 +24,7 @@
 	"scripts": {
 		"eslint": "eslint '{,.}**/{,.}*.{js,json,mjs}'",
 		"eslint:fix": "npm run eslint -- --fix",
-		"install": "npx simple-git-hooks",
+		"prepare": "npx simple-git-hooks",
 		"test": "tape tests/*.js",
 		"update:interactive": "npx npm-check -uE"
 	},
