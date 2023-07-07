@@ -22,15 +22,7 @@ module.exports = {
 		'@typescript-eslint/consistent-type-imports': 'error',
 		'@typescript-eslint/explicit-function-return-type': 'off',
 		'@typescript-eslint/explicit-member-accessibility': 'error',
-		'@typescript-eslint/explicit-module-boundary-types': [
-			'error',
-			{
-				allowArgumentsExplicitlyTypedAsAny: false,
-				allowDirectConstAssertionInArrowFunctions: false,
-				allowHigherOrderFunctions: false,
-				allowTypedFunctionExpressions: false,
-			},
-		],
+		'@typescript-eslint/explicit-module-boundary-types': 'off',
 		'@typescript-eslint/member-ordering': 'error',
 		'@typescript-eslint/method-signature-style': 'error',
 		'@typescript-eslint/naming-convention': [
@@ -119,10 +111,7 @@ module.exports = {
 		],
 		'@typescript-eslint/prefer-optional-chain': 'error',
 		'@typescript-eslint/prefer-readonly': 'error',
-		'@typescript-eslint/prefer-readonly-parameter-types': [
-			'error',
-			{ treatMethodsAsReadonly: true },
-		],
+		'@typescript-eslint/prefer-readonly-parameter-types': 'off',
 		'@typescript-eslint/prefer-reduce-type-parameter': 'error',
 		'@typescript-eslint/prefer-regexp-exec': 'error',
 		'@typescript-eslint/prefer-return-this-type': 'error',
@@ -160,13 +149,7 @@ module.exports = {
 		'@typescript-eslint/no-implied-eval': 'error',
 		'@typescript-eslint/no-invalid-this': 'error',
 		'@typescript-eslint/no-loop-func': 'error',
-		'@typescript-eslint/no-magic-numbers': [
-			'error',
-			{
-				ignoreArrayIndexes: true,
-				ignoreEnums: true,
-			},
-		],
+		'@typescript-eslint/no-magic-numbers': 'off',
 		'@typescript-eslint/no-redeclare': [
 			'error',
 			{ ignoreDeclarationMerge: false },
