@@ -27,11 +27,11 @@
 		"update:interactive": "npx npm-check -uE"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "17.7.2",
-		"@commitlint/config-conventional": "17.7.0",
+		"@commitlint/cli": "17.8.0",
+		"@commitlint/config-conventional": "17.8.0",
 		"lint-staged": "14.0.1",
 		"simple-git-hooks": "2.9.0",
-		"tape": "5.7.0"
+		"tape": "5.7.1"
 	},
 	"peerDependencies": {
 		"@babel/core": "^7.0.0",
