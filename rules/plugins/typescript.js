@@ -23,7 +23,7 @@ module.exports = {
 		'@typescript-eslint/explicit-function-return-type': 'off',
 		'@typescript-eslint/explicit-member-accessibility': 'error',
 		'@typescript-eslint/explicit-module-boundary-types': 'off',
-		'@typescript-eslint/member-ordering': 'error',
+		'@typescript-eslint/member-ordering': 'off',
 		'@typescript-eslint/method-signature-style': 'error',
 		'@typescript-eslint/naming-convention': [
 			'error',
@@ -74,7 +74,6 @@ module.exports = {
 		'@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
 		'@typescript-eslint/no-redundant-type-constituents': 'error',
 		'@typescript-eslint/no-require-imports': 'error',
-		'@typescript-eslint/no-type-alias': 'error',
 		'@typescript-eslint/no-unnecessary-boolean-literal-compare': [
 			'error',
 			{
@@ -123,7 +122,11 @@ module.exports = {
 			'error',
 			{
 				allowAny: false,
-				checkCompoundAssignments: true,
+				allowBoolean: false,
+				allowNullish: false,
+				allowNumberAndString: false,
+				allowRegExp: false,
+				skipCompoundAssignments: false,
 			},
 		],
 		'@typescript-eslint/restrict-template-expressions': 'error',
@@ -172,6 +175,7 @@ module.exports = {
 		'@typescript-eslint/no-useless-constructor': 'error',
 		'@typescript-eslint/require-await': 'error',
 		'@typescript-eslint/return-await': 'error',
+		'camelcase': 'off',
 		'default-param-last': 'off',
 		'dot-notation': 'off',
 		'init-declarations': 'off',
