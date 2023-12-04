@@ -2,6 +2,7 @@
 
 module.exports = {
 	rules: {
+		'vue/attributes-order': 'off', /* In favor of perfectionist/sort-vue-attributes */
 		'vue/block-tag-newline': [
 			'error',
 			{

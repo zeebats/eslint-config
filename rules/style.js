@@ -45,7 +45,28 @@ module.exports = {
 		'keyword-spacing': 'error',
 		'line-comment-position': 'error',
 		'linebreak-style': 'error',
-		'lines-between-class-members': 'error',
+		'lines-between-class-members': [
+			'error',
+			{
+				enforce: [
+					{
+						blankLine: 'never',
+						next: 'field',
+						prev: 'field',
+					},
+					{
+						blankLine: 'always',
+						next: 'method',
+						prev: 'field',
+					},
+					{
+						blankLine: 'always',
+						next: 'method',
+						prev: 'method',
+					},
+				],
+			},
+		],
 		'max-depth': 'error',
 		'max-len': [
 			'warn',
@@ -155,18 +176,8 @@ module.exports = {
 		],
 		'semi': 'error',
 		'semi-style': 'error',
-		'sort-imports': [
-			'error',
-			{
-				ignoreCase: true,
-				ignoreDeclarationSort: true,
-			},
-		],
-		'sort-keys': [
-			'error',
-			'asc',
-			{ natural: true },
-		],
+		'sort-imports': 'off',
+		'sort-keys': 'off',
 		'sort-vars': 'error',
 		'space-before-blocks': 'error',
 		'space-in-parens': 'error',

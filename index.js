@@ -44,7 +44,7 @@ module.exports = {
 	},
 	plugins: [
 		'import-newlines',
-		'sort-destructure-keys',
+		'perfectionist',
 		'unicorn',
 	],
 	settings: {
