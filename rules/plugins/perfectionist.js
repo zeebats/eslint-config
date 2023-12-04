@@ -117,7 +117,37 @@ module.exports = {
 		],
 		'perfectionist/sort-vue-attributes': [
 			'error',
-			{ type: 'natural' },
+			{
+				// Based on: https://vuejs.org/style-guide/rules-recommended.html#element-attribute-order
+				'custom-groups': {
+					/* eslint-disable perfectionist/sort-objects */
+					DEFINITION: 'is',
+					LIST_RENDERING: 'v-for',
+					CONDITIONALS: 'v-*(else-if|if|else|show|cloak)',
+					RENDER_MODIFIERS: 'v-*(pre|once)',
+					GLOBAL: 'id',
+					UNIQUE: '*(ref|key)',
+					SLOT: '*(v-slot|slot)',
+					TWO_WAY_BINDING: 'v-model',
+					EVENTS: '*(v-on|@*)',
+					CONTENT: 'v-*(html|text)',
+					/* eslint-enable perfectionist/sort-objects */
+				},
+				'groups': [
+					'DEFINITION',
+					'LIST_RENDERING',
+					'CONDITIONALS',
+					'RENDER_MODIFIERS',
+					'GLOBAL',
+					'UNIQUE',
+					'SLOT',
+					'TWO_WAY_BINDING',
+					'unknown',
+					'EVENTS',
+					'CONTENT',
+				],
+				'type': 'natural',
+			},
 		],
 	},
 };
