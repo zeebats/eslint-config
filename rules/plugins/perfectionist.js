@@ -9,17 +9,28 @@ module.exports = {
 				'type': 'natural',
 			},
 		],
+		'perfectionist/sort-astro-attributes': [
+			'error',
+			{ type: 'natural' },
+		],
 		'perfectionist/sort-classes': [
 			'error',
 			{
 				groups: [
+					'index-signature',
 					'static-property',
 					'private-property',
 					'property',
 					'constructor',
 					'static-method',
 					'private-method',
+					'static-private-method',
 					'method',
+					[
+						'get-method',
+						'set-method',
+					],
+					'unknown',
 				],
 				type: 'natural',
 			},
@@ -71,12 +82,9 @@ module.exports = {
 		],
 		'perfectionist/sort-jsx-props': [
 			'error',
-			{
-				'always-on-top': ['id'],
-				'type': 'natural',
-			},
+			{ type: 'natural' },
 		],
-		'perfectionist/sort-map-elements': [
+		'perfectionist/sort-maps': [
 			'error',
 			{ type: 'natural' },
 		],
@@ -99,7 +107,15 @@ module.exports = {
 				'type': 'natural',
 			},
 		],
+		'perfectionist/sort-svelte-attributes': [
+			'error',
+			{ type: 'natural' },
+		],
 		'perfectionist/sort-union-types': [
+			'error',
+			{ type: 'natural' },
+		],
+		'perfectionist/sort-vue-attributes': [
 			'error',
 			{ type: 'natural' },
 		],
