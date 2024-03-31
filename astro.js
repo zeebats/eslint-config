@@ -9,9 +9,13 @@ module.exports = {
 	overrides: [
 		...base.overrides,
 		{
+			env: {
+				'astro/astro': true,
+				'es2020': true,
+				'node': true,
+			},
 			extends: [
 				...rulesExtends,
-				'plugin:astro/base',
 				'./rules/plugins/astro',
 			],
 			files: ['**/*.astro'],
@@ -19,6 +23,43 @@ module.exports = {
 			parserOptions: {
 				extraFileExtensions: ['.astro'],
 				parser: '@typescript-eslint/parser',
+				sourceType: 'module',
+			},
+			plugins: ['astro'],
+			processor: 'astro/client-side-ts',
+		},
+		{
+			env: {
+				browser: true,
+				es2020: true,
+			},
+			extends: [
+				...rulesExtends,
+				'./rules/plugins/astro',
+			],
+			files: [
+				'**/*.astro/*.js',
+				'*.astro/*.js',
+			],
+			parserOptions: { sourceType: 'module' },
+		},
+		{
+			env: {
+				browser: true,
+				es2020: true,
+			},
+			extends: [
+				...rulesExtends,
+				'./rules/plugins/astro',
+			],
+			files: [
+				'**/*.astro/*.ts',
+				'*.astro/*.ts',
+			],
+			parser: '@typescript-eslint/parser',
+			parserOptions: {
+				project: null,
+				sourceType: 'module',
 			},
 		},
 	],
