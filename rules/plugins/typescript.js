@@ -19,7 +19,10 @@ module.exports = {
 			'type',
 		],
 		'@typescript-eslint/consistent-type-exports': 'error',
-		'@typescript-eslint/consistent-type-imports': 'error',
+		'@typescript-eslint/consistent-type-imports': [
+			'error',
+			{ fixStyle: 'inline-type-imports' },
+		],
 		'@typescript-eslint/explicit-function-return-type': 'off',
 		'@typescript-eslint/explicit-member-accessibility': 'error',
 		'@typescript-eslint/explicit-module-boundary-types': 'off',
@@ -64,7 +67,10 @@ module.exports = {
 		'@typescript-eslint/no-floating-promises': 'error',
 		'@typescript-eslint/no-for-in-array': 'error',
 		'@typescript-eslint/no-import-type-side-effects': 'error',
-		'@typescript-eslint/no-invalid-void-type': 'error',
+		'@typescript-eslint/no-invalid-void-type': [
+			'error',
+			{ allowAsThisParameter: true },
+		],
 		'@typescript-eslint/no-meaningless-void-operator': [
 			'error',
 			{ checkNever: true },
