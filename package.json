@@ -51,7 +51,7 @@
 		"eslint-plugin-jsonc": "^2.0.0",
 		"eslint-plugin-jsx-a11y": "^6.0.0",
 		"eslint-plugin-perfectionist": "^2.0.0",
-		"eslint-plugin-unicorn": "^52.0.0",
+		"eslint-plugin-unicorn": "^53.0.0",
 		"eslint-plugin-vue": "^9.0.0",
 		"eslint-plugin-vuejs-accessibility": "^2.0.0"
 	}
