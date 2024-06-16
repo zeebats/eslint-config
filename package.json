@@ -33,9 +33,9 @@
 	"devDependencies": {
 		"@commitlint/cli": "19.3.0",
 		"@commitlint/config-conventional": "19.2.2",
-		"lint-staged": "15.2.2",
+		"lint-staged": "15.2.7",
 		"simple-git-hooks": "2.11.1",
-		"tape": "5.7.5"
+		"tape": "5.8.1"
 	},
 	"peerDependencies": {
 		"@babel/core": "^7.0.0",
