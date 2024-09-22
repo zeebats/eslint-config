@@ -35,7 +35,7 @@
 		"@commitlint/config-conventional": "19.5.0",
 		"lint-staged": "15.2.10",
 		"simple-git-hooks": "2.11.1",
-		"tape": "5.8.1"
+		"tape": "5.9.0"
 	},
 	"peerDependencies": {
 		"@babel/core": "^7.0.0",
