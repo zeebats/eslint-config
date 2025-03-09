@@ -52,7 +52,7 @@
 		"eslint-plugin-jsx-a11y": "^6.0.0",
 		"eslint-plugin-perfectionist": "^4.0.0",
 		"eslint-plugin-unicorn": "^57.0.0",
-		"eslint-plugin-vue": "^9.0.0",
+		"eslint-plugin-vue": "^10.0.0",
 		"eslint-plugin-vuejs-accessibility": "^2.0.0"
 	}
 }
