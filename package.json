@@ -33,7 +33,7 @@
 	"devDependencies": {
 		"@commitlint/cli": "19.8.0",
 		"@commitlint/config-conventional": "19.8.0",
-		"lint-staged": "15.4.3",
+		"lint-staged": "15.5.0",
 		"simple-git-hooks": "2.11.1",
 		"tape": "5.9.0"
 	},
